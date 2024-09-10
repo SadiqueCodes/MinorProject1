@@ -1,26 +1,74 @@
-/* Global Styles */
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3f4f6;
-    color: #333;
-  }
-  
-  h1, h2, h3 {
-    margin: 0;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .App {
-    text-align: center;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+/* For desktop screens */
+.desktop-content {
+  padding: 20px;
+}
+
+/* For mobile screens */
+.mobile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff; /* Same color as before */
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Make room for the fixed mobile header */
+.mobile-content {
+  padding-top: 60px; /* Adds space for the fixed header */
+}
+
+/* Mobile navigation bar */
+.mobile-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #007bff; /* Use same background color */
+  color: white;
+  height: 60px;
+  z-index: 1000;
+}
+
+/* Mobile nav links */
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.mobile-nav a i {
+  font-size: 24px;
+  display: block;
+}
+
+.mobile-nav a span {
+  display: block;
+  font-size: 12px;
+}
+
+/* Button styles for mobile */
+.cta-button {
+  background-color: #007bff; /* Keep original button color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

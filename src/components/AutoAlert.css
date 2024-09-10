@@ -1,0 +1,104 @@
+/* AutoAlert.css */
+
+/* General styling for the whole page */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.auto-alert-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Header text */
+.auto-alert-page h2 {
+  color: #007bff; /* Original blue color */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph text */
+.auto-alert-page p {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Input slider */
+input[type="range"] {
+  width: 300px;
+  margin: 10px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #007bff; /* Blue thumb */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #007bff; /* Blue thumb */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Battery percentage display */
+.auto-alert-page div {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.cta-button {
+  background-color: #007bff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .auto-alert-page h2 {
+    font-size: 24px;
+  }
+
+  .auto-alert-page p {
+    font-size: 16px;
+  }
+
+  input[type="range"] {
+    width: 100%; /* Make the slider full width on smaller screens */
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
